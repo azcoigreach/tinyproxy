@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  tinyproxy:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./tinyproxy.conf:/etc/tinyproxy/tinyproxy.conf
+    restart: always
