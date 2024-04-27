@@ -6,4 +6,5 @@ services:
       - "8888:8888"
     volumes:
       - ./tinyproxy.conf:/usr/etc/tinyproxy/tinyproxy.conf
+      - ./tinyproxy.log:/var/log/tinyproxy/tinyproxy.log
     restart: always
