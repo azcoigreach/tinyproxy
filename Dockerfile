@@ -25,7 +25,7 @@ COPY --from=builder /usr/bin/tinyproxy /usr/bin/tinyproxy
 COPY --from=builder /usr/share/tinyproxy /usr/share/tinyproxy
 
 # Copy the custom configuration file
-COPY tinyproxy.conf /etc/tinyproxy/tinyproxy.conf
+COPY tinyproxy.conf /usr/etc/tinyproxy/tinyproxy.conf
 
 # Expose the default Tinyproxy port
 EXPOSE 8888
